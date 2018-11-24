@@ -169,21 +169,20 @@ UIサイズ調整=UI Size Adjustment
 キャラメイクアシスタンス=Chara Maker Assist
 
 //Regex
-r:"スロット０([0-9])"=r:"Slot0{1}"
-r:"スロット([0-9]+)"=r:"Slot{1}"
+r:"^スロット０([0-9])$"=r:"Slot0$1"
+r:"^スロット([0-9]+)$"=r:"Slot$1"
 
-r:"フレームレート：([0-9]+.[0-9]+)"=r:"Frame Rate:{1}"
-r:"再生速度：([0-9].[0-9]+)"=r:"Playback Speed:{1}"
-r:"再生速度：([0-9])"=r:"Playback Speed:{1}"
-r:"カリングマスク : ([-0-9]+)"=r:"Culling Mask:{1}"
-r:"選択中のライト：([0-9]+)"=r:"Selected Light:{1}"
-r:"ライト.オン/オフ"=Light On/Off
-r:"影の種類：([0-9])=r:"Shadow Type:{1}"
-r:"リストアップされたオブジェクト数：([0-9]+)"=r:"Number of Objects:{1}"
-r:"オブジェクト名：(.*)\nインスタンスID：(.*)\nタグ：(.*)\nレイヤー：(.*)\n子オブジェクトの数：(.*)"=r:"Object name:{1}\nInstance ID:{2}\nTags:{3}\nLayer:{4}\nChild Objects:{5}"
-r:"現在のレイヤ：([0-9]+)"=r:"Current Layer:{1}"
-r:"アタッチマテリアル総数：([0-9]+)"=r:"Number of Attached Materials:{1}"
-r:"操作中マテリアル名(.*)"=r:"Materials Used:{1}"
-r:"接続されているディスプレイ数 : ([0-9]) 台"=r:"Number of connected displays: {1}"
-r:"[^(.*?)っても、キャラデータのURLをコピーして「Load」ボタンを押すだけなので]っても、キャラデータのURLをコピーして「Load」ボタンを押すだけなので"=Direct Chara Loader\n	Copy the URL of the character data and press the Load button
-r:"今：([0-9]+)"=r:"Page:{1}"
+r:"^フレームレート：([0-9]+.[0-9]+)$"=r:"Frame Rate:$1"
+r:"^再生速度：(\\d+(\\.\\d+)?)$"=r:"Playback Speed:$1"  
+r:"^カリングマスク : ([-0-9]+)$"=r:"Culling Mask:$1"
+r:"^選択中のライト：([0-9]+)$"=r:"Selected Light:$1"
+r:"^ライト.オン/オフ$"=Light On/Off
+r:"^影の種類：([0-9])=r:"Shadow Type:$1"
+r:"^リストアップされたオブジェクト数：([0-9]+)$"=r:"Number of Objects:$1"
+r:"^オブジェクト名：(.*)\nインスタンスID：(.*)\nタグ：(.*)\nレイヤー：(.*)\n子オブジェクトの数：(.*)$"=r:"Object name:$1\nInstance ID:$2\nTags:$3\nLayer:$4\nChild Objects:$5"
+r:"^現在のレイヤ：([0-9]+)$"=r:"Current Layer:$1"
+r:"^アタッチマテリアル総数：([0-9]+)$"=r:"Number of Attached Materials:$1"
+r:"^操作中マテリアル名(.*)$"=r:"Materials Used:$1"
+r:"^接続されているディスプレイ数 : ([0-9]) 台$"=r:"Number of connected displays: $1"
+r:"^[^(.*?)っても、キャラデータのURLをコピーして「Load」ボタンを押すだけなので]っても、キャラデータのURLをコピーして「Load」ボタンを押すだけなので$"=Direct Chara Loader\n	Copy the URL of the character data and press the Load button
+r:"^今：([0-9]+)$"=r:"Page:$1"
