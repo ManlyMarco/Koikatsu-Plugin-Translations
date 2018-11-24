@@ -8,7 +8,7 @@ English translations for various Japanese plugins
 
 ## Notes
 -These translations are a work in progress and their format may change as a result of ongoing changes to the DynamicTranslationLoader plugin.  
--Bleeding edge builds of BepisPlugins may contain bugs. Use at your own risk. Build 162 seems stable but no promises that other builds will work as well or at all.  
+-Bleeding edge builds of BepisPlugins may contain bugs. Use at your own risk. Build 166 seems stable but no promises that other builds will work as well or at all.  
 -These translations are made by someone with limited Japanese knowledge with the help of existing translations and Google Translate. They should at least be better than nothing.
 
 ## Status
