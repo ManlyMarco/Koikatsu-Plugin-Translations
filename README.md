@@ -3,7 +3,7 @@ English translations for various Japanese plugins
 
 ## Installation
 1. Install [BepInEx](https://github.com/BepInEx/BepInEx/releases)
-2. Install [BepisPlugins](http://bepisbuilds.dyn.mk/bepis_plugins) Bleeding Edge build 162. These translations require Regex support which doesn't work in the official r6 release as well as methods for hooking GUIs that don't exist in r6.
+2. Install [BepisPlugins](http://bepisbuilds.dyn.mk/bepis_plugins) Bleeding Edge build 166. These translations require Regex support which doesn't work in the official r6 release as well as methods for hooking GUIs that don't exist in r6.
 3. Click the green "Clone or download" button above and "Download .zip". Extract and merge the BepInEx folder with your own.
 
 ## Notes
