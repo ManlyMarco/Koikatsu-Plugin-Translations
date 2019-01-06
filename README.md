@@ -3,7 +3,8 @@ English translations for various Japanese plugins
 
 ## Installation
 1. Install [BepInEx](https://github.com/BepInEx/BepInEx/releases) and [BepisPlugins](https://github.com/bbepis/BepisPlugins/releases) (r7 or higher required)  
-2. Click the green "Clone or download" button above and "Download .zip". Extract and merge the BepInEx folder with your own.
+2. Download the translations [here](https://github.com/DeathWeasel1337/Koikatsu-Plugin-Translations/releases/download/v1.0/Koikatsu.Plugin.Translations.v1.0.zip)
+3. Extract the zip file, merge the BepInEx folder with the on inside your Koikatu folder
 
 ## Notes
 -These translations are made by someone with limited Japanese knowledge with the help of existing translations and Google Translate. They should at least be better than nothing.
