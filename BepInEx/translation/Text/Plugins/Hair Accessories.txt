@@ -100,6 +100,7 @@
 触覚あほ毛（2本）（揺れなし）=Twin Ahoge (No movement)
 はね毛あほ毛（揺れなし）=Featherlike Ahoge (No movement)
 長触覚あほ毛（揺れなし）=Long Ahoge (No movement)
+ショート A=Short A
 
 //Front
 ストレート(左)=Straight (L)
