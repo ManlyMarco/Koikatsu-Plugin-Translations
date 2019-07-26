@@ -1,0 +1,1568 @@
+2D効果=2D Effects
+3DSE=3D SFX
+FKアイテム=FK Items
+[ymd] 大道具=[ymd] Props
+[ymd] 小道具=[ymd] Props
+[ymd] 演出=[ymd] Production
+エフェクト=Effects
+オブジェ=Objects
+キャラ=Character
+ギミック=Gimmicks
+グロー=Glow
+ベース=Base
+基本形=Models
+家具=Furniture
+小物=Small Articles
+武器=Weapons
+食材=Foodstuffs
+Ｈアイテム=H-Items
+
+// 2D Effects
+吹き出し=Speech Balloons
+画面効果=Scene Effects
+
+// 2D Effects / Speech Balloons
+r:"^丸吹き出し([０-９0-9]+)右(影あり)$"=r:"Oval $1 Right (Shadowed)"
+r:"^丸吹き出し([０-９0-9]+)左(影あり)$"=r:"Oval $1 Left (Shadowed)"
+r:"^丸吹き出し([０-９0-9]+)右$"=r:"Oval $1 Right"
+r:"^丸吹き出し([０-９0-9]+)左$"=r:"Oval $1 Left"
+r:"^先なし吹き出し.四角([０-９0-9]+)"=r:"No Tip (Rectangular $1"
+r:"^先なし吹き出し.楕円([０-９0-9]+)"=r:"No Tip (Ellipse $1"
+先なし吹き出し(正円)=No Tip (Circular)
+先なし吹き出し(角)=No Tip (Angular)
+先なし吹き出し(雲)=No Tip (Cloud)
+r:"^吹き出し先([０-９0-9]+)$"=r:"Tip $1"
+r:"四角吹き出し([０-９0-9]+)右$"=r:"Rectangular $1 Right"
+r:"四角吹き出し([０-９0-9]+)右(影あり)$"=r:"Rectangular $1 Right (Shadowed)"
+r:"四角吹き出し([０-９0-9]+)左$"=r:"Rectangular $1 Left"
+r:"四角吹き出し([０-９0-9]+)左(影あり)$"=r:"Rectangular $1 Left (Shadowed)"
+r:"回想吹き出し([０-９0-9]+)右$"=r:"Thinking $1 Right"
+r:"回想吹き出し([０-９0-9]+)右(影あり)$"=r:"Thinking $1 Right (Shadowed)"
+r:"回想吹き出し([０-９0-9]+)左$"=r:"Thinking $1 Left"
+r:"回想吹き出し([０-９0-9]+)左(影あり)$"=r:"Thinking $1 Left (Shadowed)"
+r:"惰円吹き出し([０-９0-9]+)右$"=r:"Ellipse $1 Right"
+r:"惰円吹き出し([０-９0-9]+)右(影あり)$"=r:"Ellipse $1 Right (Shadowed)"
+r:"惰円吹き出し([０-９0-9]+)左$"=r:"Ellipse $1 Left"
+r:"惰円吹き出し([０-９0-9]+)左(影あり)$"=r:"Ellipse $1 Left (Shadowed)"
+r:"棘吹き出し([０-９0-9]+)右$"=r:"Shocked $1 Right"
+r:"棘吹き出し([０-９0-9]+)右(影あり)$"=r:"Shocked $1 Right (Shadowed)"
+r:"棘吹き出し([０-９0-9]+)左$"=r:"Shocked $1 Left"
+r:"棘吹き出し([０-９0-9]+)左(影あり)$"=r:"Shocked $1 Left (Shadowed)"
+r:"楕円吹き出し([０-９0-9]+)左$"=r:"Ellipse $1 Left"
+r:"正円吹き出し([０-９0-9]+)右$"=r:"Circular $1 Right"
+r:"正円吹き出し([０-９0-9]+)右(影あり)$"=r:"Circular $1 Right (Shadowed)"
+r:"正円吹き出し([０-９0-9]+)左$"=r:"Circular $1 Left"
+r:"正円吹き出し([０-９0-9]+)左(影あり)$"=r:"Circular $1 Left (Shadowed)"
+r:"角吹き出し([０-９0-9]+)右$"=r:"Angular $1 Right"
+r:"角吹き出し([０-９0-9]+)右(影あり)$"=r:"Angular $1 Right (Shadowed)"
+r:"角吹き出し([０-９0-9]+)左$"=r:"Angular $1 Left"
+r:"角吹き出し([０-９0-9]+)左(影あり)$"=r:"Angular $1 Left (Shadowed)"
+r:"雲吹き出し([０-９0-9]+)右$"=r:"Cloud $1 Right"
+r:"雲吹き出し([０-９0-9]+)右(影あり)$"=r:"Cloud $1 Right (Shadowed)"
+r:"雲吹き出し([０-９0-9]+)左$"=r:"Cloud $1 Left"
+r:"雲吹き出し([０-９0-9]+)左(影あり)$"=r:"Cloud $1 Left (Shadowed)"
+r:"雷吹き出し([０-９0-9]+)右$"=r:"Lightning $1 Right"
+r:"雷吹き出し([０-９0-9]+)右(影あり)$"=r:"Lightning $1 Right (Shadowed)"
+r:"雷吹き出し([０-９0-9]+)左$"=r:"Lightning $1 Left"
+r:"雷吹き出し([０-９0-9]+)左(影あり)$"=r:"Lightning $1 Left (Shadowed)"
+
+
+// 2D Effects / Scene Effects
+r:"^レンズフレア([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Lens Flare $1"
+丸影=Circular Shadow
+色影=Colored Shadow
+r:"^色影.四角([０-９0-9]+)"=r:"Colored Shadow (Square $1"
+集中線=Focal Lines
+
+// 3D SFX
+Sッ気=Sadistic
+お嬢様=Ojousama
+のじゃっ子=Old-Fashioned
+ひねくれ=Reluctant
+ものぐさ=Lazy
+オタク女子=Otaku
+ギャル=Gyaru
+セクシー=Sexy
+ボーイッシュ=Tomboy
+ミステリアス=Mysterious
+ミーハー=Trendy
+モジモジ=Timid
+ヤンデレ=Yandere
+不幸少女=Jinxed
+不良少女=Delinquent
+几帳面=Perfectionist
+勝気=Willful
+単純=Simple
+大和撫子=Yamato Nadeshiko
+姉御肌=Big Sisterly
+帰国子女=Returnee
+後輩キャラ=Kouhai
+意地っ張り=Stubborn
+意識高いクール=Wannabe
+文学少女=Bookish
+方言娘=Slangy
+正統派ヒロイン=Typical Schoolgirl
+母性的=Motherly
+気さく=Friendly
+無口=Quiet
+無感情=Emotionless
+環境音=Environment
+純真無垢=Pure
+素直クール=Humble
+艶やか=Glamorous
+誠実=Honest
+邪気眼=Delusional
+野性的=Wild
+電波=Weirdo
+高飛車=Snobby
+
+// 3D SFX / Sadistic
+r:"^フェラ([０-９0-9]+)$"=r:"Blowjob $1"
+r:"^喘ぎ([０-９0-9]+)$"=r:"Panting $1"
+
+// 3D SFX / Environment
+デンマ音=Electric Wand
+バイブ音=Vibrator
+回転音=Rotation
+夏の夕暮れ=Summer Twilight Chirping
+換気扇=Ventilation Fan
+木々のざわめき=Leaves Rustling
+水流=Water Flowing
+水流(激)=Water Flowing (Strong)
+焚火=Bonfire
+犬の鳴き声=Dog Barking
+虫の声=Crickets Chirping
+雨音=Rain
+電話のコール音=Telephone Ringing
+風=Wind
+鳥のさえずり=Birds Chirping
+
+// FK Items
+ヒューマンFK=Human FK
+通常=General
+
+// FK Items / H
+r:"^FKアナルビーズ([０-９0-9]+)$"=r:"FK Anal Beads $1"
+r:"^FK触手([０-９0-9]+)$"=r:"FK Tentacle $1"
+
+// FK Items / Human FK
+モブ=Mob
+
+// FK Items / General
+r:"^FK先端([０-９0-9]+)$"=r:"FK Tip $1"
+FK軸=FK Shaft
+FK関節=FK Joint
+メカチューブ=Mecha Tube
+r:"^土台([０-９0-9]+)$"=r:"Base $1"
+
+// HarvexARC-Maps
+Nico静画ムムムさん=Nico Shizuka Mumumu
+
+// HarvexARC-Maps / Nico Shizuka Mumumu
+ラビットハウス=Rabbit House
+天満宮=Tenmangu
+清水風=Shimizu Style
+
+// PDAFT Stuff / Maps
+ワールドイズマイン stg=World Is Mine Stg
+
+// [ymd] Props
+CLO ベース=CLO Base
+CLO 壁=CLO Wall
+スカイドーム=Sky Dome
+スクリーン=Screen
+テレビカメラ=TV Camera
+マップ HM スタジオ=Map HM Studio
+マップ HM スタジオ カスタム=Map HM Studio Custom
+マップ HM ステージ=Map HM Stage
+マップ HM ステージ カスタム=Map HM Stage Custom
+マップ HM ハーレム部屋=Map HM Harlem Room
+マップ HM ベンチ=Map HM Bench
+マップ HM 公園=Map HM Park
+r:"^ロケーション([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Location $1"
+植物=Plants
+
+// [ymd] Props / CLO Base
+r:"^CLベース アスファルト床([０-９0-9]+) *$"=r:"CL Base Asphalt Floor $1"
+r:"^CLベース タイル床([０-９0-9]+)$"=r:"CL Base Tile Floor $1"
+r:"^CLベース レンガ床([０-９0-9]+)$"=r:"CL Base Brick Floor $1"
+CLベース 体育館床=CL Base Gymnasium Floor
+CLベース 地面(土)=CL Base Ground (Sat)
+CLベース 校内床=CL Base School Floor
+CLベース 浜辺=CL Base Beach
+CLベース 浜辺(砂)=CL Base Beach (Sand)
+r:"^CLベース 石床([０-９0-9]+)$"=r:"CL Base Stone Floor $1"
+r:"^CLベース 石畳([０-９0-9]+)$"=r:"CL Base Cobblestone $1"
+r:"^CLベース 砂地([０-９0-9]+)$"=r:"CL Base Sand $1"
+CLベース 草原=CL Base Meadow
+CLベース 野原=CL Base Field
+
+// [ymd] Props / CLO Wall
+CL壁 スクリーン=CL Wall Screen
+r:"^CL壁 ブロック壁([０-９0-9]+)$"=r:"CL Wall Block Wall $1"
+CL壁 体育館壁=CL Wall Gymnasium Wall
+CL壁 木柱=CL Wall Wood Post
+CL壁 木製壁=CL Wall Wooden Wall
+r:"^CL壁 石壁([０-９0-9]+)$"=r:"CL Wall Stone Wall $1"
+CL壁 石柱=CL Wall
+CL壁 窓=CL Wall Window
+CL壁 黒板=CL Wall Blackboard
+
+// [ymd] Props / Sky Dome
+画像球 外側=Image Sphere Outside
+透過球=Transparent Sphere
+
+// [ymd] Props / Location HS
+マップ HS シャワー室=Map HS Shower Room
+マップ HS トイレ=Map HS Toilet
+
+// [ymd] Props / Location PC
+マップ PC トイレ=Map PC Toilet
+マップ PC 公園=Map PC Park
+マップ PC 和室=Map PC Japanese-style Room
+マップ PC 大観覧場=Map PC Large Viewing Area
+マップ PC 大観覧場 檻=Map PC Large Viewing Area Cage
+マップ PC 応接室=Map PC Reception Room
+マップ PC 洋室=Map PC Western-style Room
+マップ PC 浴場=Map PC Bath
+マップ PC 牢屋=Map PC Prison
+マップ PC 路地裏=Map PC Alley Back
+
+// [ymd] Props / Location PH
+r:"^マップ PH 公園 ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Map PH Park $1"
+
+// [ymd] Props / Location PPD
+マップ PPD オフィス=Map PPD Office
+マップ PPD プール=Map PPD Pool
+マップ PPD ポルノストア=Map PPD Porn Store
+マップ PPD 喫茶店=Map PPD Cafe
+マップ PPD 地下室=Map PPD Basement
+マップ PPD 地下街=Map PPD Underground Street
+マップ PPD 楽屋=Map PPD Dressing Room
+マップ PPD 自室=Map PPD Own Room
+マップ PPDA 温泉=Map PPDA Hot Springs
+
+// [ymd] Props / Plants
+低木=Shrub
+r:"^木([０-９0-9]+) 幹$"=r:"Tree $1 Trunk"
+r:"木([０-９0-9]+) 枝葉([０-９0-9]*)$"=r:"Tree $1 Branches And Leaves $2"
+芝=Shiba
+草 少量=Grass Small Amount
+r:"^草([０-９0-9]+)$"=r:"Grass $1"
+草原=Grass
+草原 減量=Grass Reduction
+
+// [ymd] Props
+小道具=Props
+手で持つ物=Things You Hold With Your Hands
+衣服FK=Clothes FK
+鏡=Mirror
+食べ物関係=Food Relations
+
+// [ymd] Props / Mob
+r:"^モブ ([a-zA-Zａ-ｚＡ-Ｚ]+)女([０-９0-9]*)"=r:"Mob $1 Woman $2"
+r:"^モブ ([a-zA-Zａ-ｚＡ-Ｚ]+)男([０-９0-9]*)"=r:"Mob $1 Man $2"
+モブ PPD イカ=Mob PPD Squid
+モブ PPD クモ=Mob PPD Spider
+モブ PPD ブタ=Mob PPD Pig
+r:"^モブ PPD([０-９0-9]+)$"=r:"Mob PPD$1"
+猫のおもちゃ FK=Cat Toy FK
+猫のおもちゃ 単色 FK=Cat Toy Single Color FK
+舌 FK=Tongue FK
+舌 FK カラーマスク=Tongue FK Color Mask
+
+// [ymd] Props / Props
+キーボード=Keyboard
+ギター=Guitar
+ギターピック=Guitar Pick
+ダンボール=Cardboard
+ダンボール FK=Cardboard FK
+r:"^ドラム ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Drum $1"
+ドラム スティック=Drum Stick
+ドラム 椅子=Drum Chair
+r:"^ハンガー ([０-９0-9]+)$"=r:"Hanger $1"
+ハンガー ラック=Hanger Rack
+ピアノ=Piano
+ピアノ 椅子=Piano Chair
+マイク=Microphone
+マイクスタンド=Microphone Stand
+リコーダー=Recorder
+身長計 ヒット部分=Height Gauge Hit Part
+身長計 ベース部分=Height Scale Base Part
+
+// [ymd] Props / Things You Hold With Your Hands
+うなぎ[FK]=Unagi [FK]
+ほうき[FK]=Broom [FK]
+アサルトライフル=Assault Rifle
+ウォーターガン=Water Gun
+r:"^ガンブレード ([０-９0-9]+)$"=r:"Gun Blade $1"
+クナイ=Kunai
+スタンガン=Stun Gun
+タオル[FK]=Towel [FK]
+チアバトン=Cibaton
+チェーンソー=Chainsaw
+ハリセン=Harisen
+ハリセン しなり=Harrison
+ハンカチ[FK]=Handkerchief [FK]
+ハンドガン=Hand Gun
+バトルライフル=Battle Rifle
+バラ一輪=One Rose
+ヒロインソード=Heroine Sword
+ピコピコハンマー=Pico Pico Hammer
+ブライダルブーケ=Bridal Bouquet
+モップ=Mop
+伸ばし棒=Stick
+刺突剣=Stabbing Sword
+剣=Sword
+大剣=Large Sword
+小太刀=Short Sword
+弾薬=Ammunition
+戦槌=Battle
+曲剣=Curved Sword
+本=Book
+r:"^杖 ([０-９0-9]+)$"=r:"Cane $1"
+r:"^槍 ([０-９0-9]+)$"=r:"槍 $1"
+煙管=Smoke Pipe
+r:"^盾 ([０-９0-9]+)$"=r:"Shield $1"
+花束=Bouquet
+薬莢=Pharmaceutical Capsule
+警棒=Batons
+重火器=Heavy Weapons
+重火器 展開=Heavy Weapons Deployment
+鉤爪=Claw
+錆びた剣=Rusted Sword
+r:"^鎌([０-９0-9]+)$"=r:"鎌 $1"
+魔法の杖[FK]=Magic Wand [FK]
+
+// [ymd] Props / Clothes FK
+r:"^ショーツ ([０-９0-9]+)$"=r:"Shorts $1"
+スクール水着=School Swimsuit
+r:"^ストッキング ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Stocking $1"
+トップス キャミソール=Tops Camisole
+r:"^トップス シャツ ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Tops Shirt $1"
+トップス ジャージ=Tops Jersey
+トップス セーラー=Tops Sailor
+トップス セーラースカーフ=Tops Sailor Scarf
+トップス パジャマ=Tops Pajamas
+トップス パーカー=Tops Parker
+r:"^トップス ブレザー上着 ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Tops Blazer Outerwear $1"
+r:"^トップス ランニングウェア ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Tops Running Wear $1"
+r:"^トップス ロングワイシャツ ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Tops Long Shirt $1"
+r:"^トップス ロングワイシャツ ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Tops Long Shirts $1"
+トップス ワンピース=Tops One Piece
+バスタオル=Bath Towel
+ビキニ水着 上=Bikini Swimwear On
+ビキニ水着 下=Bikini Swimwear Below
+r:"^ブラ ([０-９0-9]+)$"=r:"Bra $1"
+ボトムス ショートジャージ=Bottoms Short Jersey
+ボトムス ハーフジャージ=Bottoms Half Jersey
+ボトムス パジャマ=Bottoms Pajamas
+ボトムス フレアスカート=Bottoms Flare Skirt
+ボトムス ブルマ=Bottoms Burma
+ボトムス ホットパンツ=Bottoms Hot Pants
+ボトムス ボックススカート=Bottoms Box Skirt
+ボトムス ボトムス キュートパンツ=Bottoms Bottoms Shorts
+ボトムス ミニタイトスカート=Bottom Slim Skirt
+ボトムス ロングパンツ=Bottoms Pants
+r:"^手袋([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Gloves $1"
+r:"^手袋ロング ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Gloves Long $1"
+r:"^手袋ロング ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Glove Long $1"
+競技水着=Competition Swimwear
+r:"靴下 ([０-９0-9]+) ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Socks $1 $2"
+鏡=Mirror
+
+// [ymd] Props / Mirror
+鏡 円=Mirror Circle
+r:"^鏡 円 アルファ ([０-９0-9]+)$"=r:"Mirror Circle Alpha $1"
+鏡 円 境界ぼかし=Mirror Circle Border Blur
+鏡 四角=Mirror Square
+r:"^鏡 四角 アルファ ([０-９0-9]+)$"=r:"Mirror Square Alpha $1"
+鏡 四角 境界ぼかし=Mirror Square Border Blur
+
+// [ymd] Props / Food Relations
+おしぼり=Towel
+おたま=Ladle
+おにぎり=Rice Ball
+おぼん=Follow
+お皿=The Dishes
+まな板=Cutting Board
+まな板 白=Cutting Board White
+アイス箱=Ice Box
+カレー=Curry
+ケーキ=Cake
+コーヒー=Cup Of Coffee
+サラダ=Salad
+ショートケーキ=Shortcake
+スイカ=Watermelon
+スプーン=Spoon
+r:"^ネギ ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Green Onion $1"
+バスケット=Basket
+バスケット 空 FK=Basket Empty FK
+r:"^パン ([０-９0-9]+)$"=r:"Bread $1"
+ビール グラスジョッキ=Beer Glass Mug
+ビール 樽ジョッキ=Beer Barrel Mug
+ビール 瓶=Beer Bottle
+ビール缶=Beer Can
+r:"^ピザ ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Pizza $1"
+r:"^ピーマン ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Bell Pepper $1"
+r:"^フォーク ([０-９0-9]+)$"=r:"Fork $1"
+フライパン=Frying Pan
+ヘラ=Hera
+ボウル=Bowl
+r:"^ポテチ ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Potech $1"
+マグカップ=Mug
+ランチョンマット=Place Mat
+レシピ本=Recipe Book
+ワイン グラス=Wine Glass
+ワイン ボトル=Wine Bottle
+包丁=Kitchen Knife
+r:"^卵 ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Egg $1"
+寸胴鍋=Scale Pot
+小麦粉袋=Flour Bag
+恵方巻=Ehime Winding
+r:"料理鍋([０-９0-9]+) ([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Cooking Pot $1 $2"
+本命チョコ=My Favorite Chocolate
+本命チョコ カラーマスク=My Favorite Chocolate Color Mask
+泡だて器=Foamer
+瓶容器=Bottle Container
+目玉焼き=Fried Egg
+紅茶 カップ=Tea Cup
+紅茶 カップ受皿=Tea Cup Saucer
+紅茶 ポット=Tea Pot
+紙袋=Paper Bag
+義理チョコ=In-law Chocolate
+買い物袋=Shopping Bag
+酒樽=Barrel
+陶器酒瓶=Pottery Sake Bottle
+骨付き肉=Meat With Bone
+魚=Fish
+
+// [ymd] Production
+ひらがな=Hiragana
+ひらがな 濁=Hiragana Muddy
+アルファベット=Alphabet
+カタカナ=Katakana
+カタカナ 濁=Katakana Muddy
+効果=Effect
+数字=Number
+照明=Illumination
+記号=Symbol
+
+r:"^文字 ([ぁ-ゟ])$"=r:"Hiragana $1"
+r:"^文字 ([゠-ヿ])$"=r:"Katakana $1"
+r:"^文字 ([a-zA-Zａ-ｚＡ-Ｚ])$"=r:"Letter $1"
+
+// [ymd] Production / Effect
+三角影[減算]=Triangular Shadow [Subtract]
+丸影[アルファ]=Round Shadow [Alpha]
+丸影[減算FK]=Round Shadow [Subtracted FK]
+丸影[減算]=Round Shadow [Subtraction]
+四角影[減算]=Square Shadow [Subtraction]
+曲面影[減算]=Curved Surface [Subtract]
+集中線 影なし=Concentrated Line Without Shadow
+
+// [ymd] Production / Number
+r:"^数字 ([０-９0-9]+)$"=r:"Number $1"
+
+// [ymd] Production / Illumination
+スポットレーザー 虹=Spot Laser Rainbow
+パーライト 虹=Perlight Rainbow
+パーライト 赤=Perlite Red
+パーライト 青=Perlite Blue
+パーライト 黄=Perlite Yellow
+
+// [ymd] Production / Symbol
+r:"^記号 (.)$"=r:"Symbol $1"
+
+記号 ぐるぐる=Symbol Round
+記号 キャッキャ=Symbol Cashier
+記号 ハート=Symbol Heart
+記号 ハート割=Symbol Heart Rate
+記号 ビクッ=Symbol Wince
+記号 卵=Symbol Egg
+記号 句点=Symbol Period
+記号 怒=Symbol Angry
+r:"^記号 汗([０-９0-9]+)$"=r:"Symbol Sweat $1"
+記号 羽右=Symbol Feather Right
+記号 羽左=Symbol Feather Left
+記号 肉球=Symbol Meatball
+記号 読点=Symbol Comma
+記号 連斜線=Symbol Cross Hatching
+
+// Effects
+パーティクル=Particles
+固定エフェクト=Fixed Effects
+
+// Effects / Particles
+キラキラ=Sparkles
+シャワー（弱）=Shower (Weak)
+シャワー（強）=Shower (Strong)
+バブルシャワー=Shower Bubbles
+マズルフラッシュ=Muzzle Flashes
+光の粉=Sparkles Of Light
+光の軌跡=Point Of Light
+光の閃光=Flashes Of Light
+動く波動=Energy Waves
+土煙=Dust Clouds
+放電=Electrical Discharge
+液体=Urine
+滝=Waterfall
+濃い液体（中）=Female Ejaculate (Average)
+濃い液体（弱）=Female Ejaculate (Weak)
+濃い液体（強）=Female Ejaculate (Strong)
+火=Fire
+火の玉=Ball Of Fire
+火炎=Flames
+闇=Darkness
+
+// Effects / Fixed Effects
+バリア・ピラミッド(緑)=Pyramidal Energy Barrier (Green)
+バリア・ピラミッド(赤)=Pyramidal Energy Barrier (Red)
+バリア・円(緑)=Spherical Energy Barrier (Green)
+バリア・円(赤)=Spherical Energy Barrier (Red)
+バリア・四角(緑)=Cubic Energy Barrier (Green)
+バリア・四角(赤)=Cubic Energy Barrier (Red)
+ビーム・剣=Energy Beam (Sword)
+ビーム・扇=Energy Beam (Folding Fan)
+波動・円=Energy Wave (Circle)
+波動・斬=Energy Wave (Arc)
+波動・柱=Energy Wave (Pillar)
+液体A=Semen Drip
+液体B=Semen Spurt
+液溜まり=Semen Puddle
+r:"^溶解粘液([０-９0-9]+)$"=r:"Dissolving Liquids $1"
+魔法陣=Magic Circle
+
+// Objects
+その他=Miscellaneous
+アフタースクール=Afterschool
+クリスマス=Christmas
+サマー=Summer
+スポーツ=Sports
+ハロウィン=Halloween
+置物=Ornaments
+
+// Objects / Miscellaneous
+三角木馬=Spanish Donkey
+木製拘束具=Pillory
+錘=Weighted Shackle
+
+// Objects / Afterschool
+かご=Basket
+シックな棚=Chic Shelves
+r:"^ステンドグラス([０-９0-9]+)$"=r:"Stained Glass $1"
+タンバリン=Tambourine
+パイプソファ=Pipe Sofa
+マラカス=Maracas
+リールライト=Light Batten
+丸いガラステーブル=Round Glass Table
+丸いステンドグラス=Circular Stained Glass
+丸いソファ=Round Ottoman
+丸いベッド=Round Bed
+丸い棚=Round Nightstand
+個室のソファ=Bedroom Sofa
+個室のテーブル=Bedroom Table
+r:"^充電器([０-９0-9]+)$"=r:"Charging Dock $1"
+大きい照明スイッチ=Large Lighting Switchboard
+大型の台=Large Steel Tower
+大型テレビ=Big-Screen TV
+太陽のステンドグラス=Sun Pattern Stained Glass
+小型自動販売機=Small Vending Machine
+r:"^教会の柱([０-９0-9]+)$"=r:"Church Pillar $1"
+教会の椅子=Church Pew
+演説台=Lectern
+灰皿=Ashtray
+r:"^照明機器([０-９0-9]+)$"=r:"Stage Lighting $1"
+r:"^燭台([０-９0-9]+)$"=r:"Candlestick $1"
+監視カメラ=Surveillance Camera
+祭壇=Altar
+簡易鉄骨（中）=Simple Steel Truss (Medium)
+簡易鉄骨（大）=Simple Steel Truss (Large)
+簡易鉄骨（小）=Simple Steel Truss (Small)
+精算機=Ticket Adjustment Machine
+細い蝋燭=Slender Candle
+装飾ランプ=Decorative Lamp
+装飾柵=Decorative Fence
+装飾花=Ornamental Flower
+誘導柵=Guardrail
+透けた布=Transparent Cloth
+r:"^音楽機器([０-９0-9]+)$"=r:"Karaoke Machine $1"
+r:"^音響機器([０-９0-9]+)$"=r:"Loudspeaker $1"
+
+// Objects / Christmas
+こたつ=Kotatsu
+みかん=Mandarin Orange
+ゆきだるま=Snowman
+イルミネーション(チューブ)=Christmas Lights (Tube)
+イルミネーション(電球)=Christmas Lights (String)
+クリスマスケーキ=Christmas Cake
+クリスマスツリー=Christmas Tree
+ソリ=Sleigh
+プレゼント=Present
+雪の結晶=Snowflake
+
+// Objects / Summer
+かき氷の旗=Shaved Ice Banner
+かき氷機=Shaved Ice Machine
+ひまわり=Sunflower
+オール=Oar
+カヌー=Canoe
+シダ=Fern
+タライ=Washtub
+バナナボート=Banana Boat
+ビーチマット=Beach Mat
+ボート=Boat
+ヤシの木(彎曲)=Palm Tree (Curved)
+ヤシの木(直立)=Palm Tree (Upright)
+消波ブロック=Wave-Breaking Block
+竹=Bamboo
+竹半分=Half Bamboo
+竹台=Bamboo Tower
+竹食器=Bamboo Tableware
+茂み=Thicket
+
+// Objects / Sports
+サッカーゴール=Soccer Goal
+ネット=Net
+ハードル=Hurdle
+バスケットゴール=Basketball Backboard
+r:"^プールロープ([０-９0-9]+)$"=r:"Pool Rope $1"
+r:"^ボール([０-９0-9]+)$"=r:"Ball $1"
+ボール入れ=Ball Container
+r:"^マット([０-９0-9]+)$"=r:"Mat $1"
+ローラー=Roller
+平均台=Balance Beam
+得点台=Scoreboard
+r:"^手すり([０-９0-9]+)$"=r:"Handrail $1"
+朝礼台=Morning Assembly Stand
+r:"^跳び箱([０-９0-9]+)$"=r:"Vaulting Horse $1"
+踏切版=Starting Block
+r:"^飛び込み台([０-９0-9]+)$"=r:"Diving Board $1"
+
+// Objects / Halloween
+あめ玉=Wrapped Candy
+しゃれこうべ=Skull
+ぺろぺろキャンディ=Large Lollipop
+カボチャ=Pumpkin
+カボチャ(入れ物)=Jack-o'-lantern (Bucket)
+カボチャ(顔)=Jack-o'-lantern
+クモのシルエット=Spider's Silhouette
+コウモリのシルエット=Bat's Silhouette
+スイカヘッド=Watermelon Head
+大きいお玉=Large Ladle
+大鍋=Cauldron
+棺桶(箱)=Coffin
+棺桶(蓋)=Coffin Lid
+
+// Objects / Plants
+カエデ=Maple Tree
+木=Tree
+r:"^生垣([０-９0-9]+)$"=r:"Hedge $1"
+r:"^観葉植物([０-９0-9]+)$"=r:"Decorative Plant $1"
+
+// Objects / Ornaments
+ウサギの置物=Rabbit Ornament
+ポール=Pole
+木箱=Wooden Crate
+狸の置物=Tanuki Ornament
+野点傘=Open Umbrella
+
+// Character
+ダークネス=Darkness
+ファンタジー=Fantasy
+メカ=Mecha
+手=Hands
+胴=Torso
+腕=Arms
+腰=Hips
+r:"^追加([０-９0-9]+)$"=r:"Additional $1"
+頭=Head
+顔=Face
+首=Neck
+髪=Hair
+
+// Character / EC
+ぼんぼりピアス=Paper Lamp Earring
+コンシェルジュハット=Concierge Hat
+シトリースカーフ=Sitri's Scarf
+シトリータイ=Sitri's Tie
+芭蕉扇=Folding Fan
+
+// Character / MOD
+M1ヘルメット(MMD)=M1 Helmet (MMD)
+けもくまニット帽(MMD)=Kekuma Bear Knit Cap (MMD)
+けもくろしばニット帽(MMD)=Undressed Knit Hat (MMD)
+けもこしばニット帽(MMD)=Kemo Koshiba Knit Cap (MMD)
+けもねこニット帽(MMD)=Keneko Cat Knit Hat (MMD)
+けもぱんだニット帽(MMD)=Kepanda Knit Hat (MMD)
+けもひつじニット帽(MMD)=Kemono Sheep Hat (MMD)
+けもぶたニット帽(MMD)=Kemobuta Knit Cap (MMD)
+ウエスタンハット(HS)=Western Hat (HS)
+ウシャンカ(MMD)=Ushanka (MMD)
+キャスケット(HM)=Casquette (HM)
+キャスケット(自作)=Casquette (Self-Made)
+ギャリソンキャップ(HS)=Garrison Cap (HS)
+コック帽(MMD)=Cock Hat (MMD)
+コンシェルジュハット(HS)=Concierge Hat (HS)
+ゴスロリハット(HS)=Gothic Lolita Hat (HS)
+サンタ帽子(HS)=Santa Hat (HS)
+セキュリティーキャップ(HS)=Security Cap (HS)
+r:"セキュリティーキャップ([０-９0-9]+).HS.$"=r:"Security Cap $1 (HS)"
+ニット帽(MMD)=Knit Cap (MMD)
+ハンチング帽(MMD)=Hunting Cap (MMD)
+ヘルメット(MMD)=Helmet (MMD)
+ベレー帽(HM)=Beret (HM)
+マジシャンハット(HS)=Magician Hat (HS)
+マリオンの帽子(HS)=Marions Hat (HS)
+海賊帽子(HS)=Pirate Hat (HS)
+警備帽(PPD)=Security Cap (PPD)
+野球帽(MMD)=Baseball Cap (MMD)
+霊幻帽子(PPD)=Ghost Hat (PPD)
+魔女の帽子(HS)=Witch's Hat (HS)
+
+// Character / Afterschool
+ウェディングチョーカー=Wedding Choker
+ウェディングティアラ=Wedding Tiara
+ウェディングバッスル=Wedding Bustle
+ウェディングリボン=Wedding Ribbon
+ウェディングヴェール=Wedding Veil
+ウェディング雫=Wedding Earring
+スライダー =Slider
+ネームプレート=Nameplate
+フォーマルリボン =Bow Tie
+r:"^付け毛([０-９0-9]+)$"=r:"Hairpiece $1"
+婚約指輪=Engagement Ring
+結婚指輪（女）=Wedding Ring (Women)
+結婚指輪（男）=Wedding Ring (Men)
+
+// Character / Christmas
+クリスマスリボン=Christmas Ribbon
+サンタ帽子=Santa Hat
+雪の結晶(キャラ)=Snowflake (Character)
+雪の結晶ステッキ=Snowflake Wand
+
+// Character / Summer
+くまで=Rake
+ウクレレ=Ukelele
+カニ=Crab
+サイドドレープ=Side Drapes
+サーフボード=Surfboard
+スコップ=Scoop
+ヒトデ=Starfish
+プラバケツ=Plastic Bucket
+扇子(閉)=Folding Fan (Closed)
+扇子(開)=Folding Fan (Open)
+水鉄砲=Water Gun
+水風船(柄)=Water Balloon (Patterned)
+水風船(無地)=Water Balloon (Plain)
+浮き輪=Swimming Ring
+浮き輪(ドーナツ)=Swimming Ring (Donut)
+浮き輪(猫)=Swimming Ring (Cat)
+虫取りあみ=Bug-Catching Net
+貝殻=Seashell
+
+// Character / Darkness
+メカアーマー=Mecha Armor
+メカシールドⅢ=Mecha Shield Ⅲ
+メカトライニードル=Mecha Tri-Needle
+メカホイール=Mecha Wheel
+メカライオン=Mecha Lion
+
+// Character / Halloween
+ハロウィンゴースト=Halloween Ghost
+ハロウィンブルーム =Halloween Broom
+ハロウィンリボン=Halloween Ribbon
+パンプキンクラウン=Pumpkin Crown
+
+// Character / Fantasy
+アーマープレート=Armor Plate
+タングルショルダー=Tangle Shoulderpad
+ナイトバイザー=Knight Visor
+ロイヤルクラウン=Royal Crown
+ロイヤルリボン=Royal Ribbon
+毛玉=Furball
+羽の髪飾り右用=Right Hair Feather
+羽の髪飾り左用=Left Hair Feather
+鎧兜=Armored Helmet
+鎧肩当て=Armored Shoulderpad
+騎士の肩当て=Knight's Shoulderpad
+騎士の腰当=Knight's Hip Armor
+
+// Character / Mecha
+2連装砲台の模型=Twin Gun Mount Model
+r:"^メカアンテナ([０-９0-9]+)$"=r:"Mecha Antenna $1"
+メカアンプ=Mecha Amplifier
+メカウィング=Mecha Wing
+メカウィングリング=Mecha Winged Ring
+メカウイングⅡ=Mecha Wing Ⅱ
+メカゴーグル=Mecha Goggles
+メカサークル=Mecha Circle
+メカシザー=Mecha Scissors
+メカショルダー=Mecha Shoulder
+メカシールド=Mecha Shield
+メカシールドⅡ=Mecha Shield Ⅱ
+メカタイ=Mecha Tie
+メカデルタ=Mecha Delta
+メカドリル=Mecha Drill
+メカバイザー=Mecha Visor
+メカバイザーⅡ=Mecha Visor Ⅱ
+メカビームポール=Mecha Beam Pole
+メカブースター=Mecha Booster
+メカブースターⅡ=Mecha Booster Ⅱ
+メカヘアー=Mecha Hair
+メカボックス=Mecha Box
+メカボール=Mecha Ball
+メカポッド=Mecha Pod
+メカポール=Mecha Pole
+メカループ=Mecha Loop
+メカレシーバー=Mecha Receiver
+r:"^メカ装甲([０-９0-9]+)$"=r:"Mecha Armor $1"
+r:"^メカ装甲６×([０-９0-9]+)$"=r:"Mecha Armor ６×$1"
+艦艇の模型=War Fleet Model
+魚雷発射管の模型=Torpedo Tube Model
+
+// Character / Hands
+お金持ちの指輪=Diamond Ring
+クリップ=Clip
+コントローラー=Controller
+ステージマイク=Stage Microphone
+テニスボール=Tennis Ball
+テニスラケット=Tennis Racket
+ポンポン=Pom-Pom
+傘=Umbrella
+出席名簿=Attendance List
+持ち看板=Handheld Sign
+指示棒=Guide Rod
+洗濯ばさみ=Clothespin
+番傘=Coarse Oilpaper Umbrella
+食べかけアイスバー=Half-Eaten Popsicle
+
+// Character / Torso
+ギターケース=Guitar Case
+ポスターリュックサック=Backpack With Posters
+リュックサック=Backpack
+天使の翼右用=Right Angel Wing
+天使の翼左用=Left Angel Wing
+小悪魔の翼右用=Right Devil Wing
+小悪魔の翼左用=Left Devil Wing
+悪魔の翼右用=Right Demon Wing
+悪魔の翼左用=Left Demon Wing
+背負いカバン=Leather Backpack
+背負いボストン=Boston Bag
+
+// Character / Arms
+くノ一肩当て=Kunoichi Shoulderpad
+カフス=Cuffs
+シュシュ=Scrunchie
+ナイロンボストン=Nylon Boston Bag
+メタルバングル=Metal Bangle
+巫女袖=Shrine Maiden Sleeve
+腕ベルト=Arm Belt
+鬼神の肩当て=Demon God's Shoulderpad
+
+// Character / Hips
+ウォレットチェーン=Wallet Chain
+ウサギ尻尾=Rabbit Tail
+エレガントリボン=Elegant Ribbon
+エレキギター=Electric Guitar
+キツネ尻尾=Fox Tail
+テールリボン=Tail Ribbon
+ベルト=Belt
+小悪魔尻尾=Devil Tail
+悪魔尻尾=Demon Tail
+腰巻カーディガン=Wrapped Cardigan
+鬼神の腰当右用=Demon God's Hip Guard (Right)
+
+// Character / Additional 01
+メカハンド握り右用=Mecha Right Fist
+メカハンド握り左用=Mecha Left Fist
+メカハンド開き右用=Mecha Right Open Hand
+メカハンド開き左用=Mecha Left Open Hand
+メカフット=Mecha Foot
+玉飾り=New Year Ornament
+
+// Character / Additional 02
+3ポイント=Three-Jewel Necklace
+つば広帽子=Wide-Brimmed Cap
+オーバル腕時計=Oval Wristwatch
+ヘルメット=Baseball Helmet
+野球バット=Baseball Bat
+雫=Drop Earring
+
+// Character / Head
+r:"あほ毛([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Ahoge $1"
+いぬの着ぐるみ頭=Dog Costume Head
+うさぎの着ぐるみ頭=Rabbit Costume Head
+うさ耳バンド=Bunny Ears Hairband
+うなぎ=Eel
+きのこ=Mushroom
+r:"くるくるあほ毛([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Curly Ahoge $1"
+r:"ちょびあほ毛([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Tiny Ahoge $1"
+めんだこ=Flapjack Octopus
+カラー帽子=Colored Hat
+キツネ耳=Fox Ears
+r:"ギザギザあほ毛([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Jagged Ahoge $1"
+サンバイザー=Sun Visor
+r:"ハートあほ毛([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Heart Ahoge $1"
+パーティーハット=Party Hat
+ヘアバンド=Hairband
+ヘッドホン=Headphones
+ベレー帽=Beret
+リボン=Ribbon
+一角=Unicorn Horn
+三角巾=Bandanna
+天使の輪=Angel Halo
+密着型ヘッドホン=Snug Headphones
+悪魔の角=Devil Horns
+水泳キャップ=Swimming Cap
+牛の角=Cow Horns
+猫のおもちゃ=Toy Cat
+王冠=Crown
+紐リボン=String Ribbon
+結びヘアバンド=Knotted Hairband
+羊の角=Sheep Horns
+野球ヘルメット=Baseball Helmet
+鉢巻=Headband
+鬼神の額当て(右)=Demon God's Brow Guard (Right)
+鬼神の額当て(左)=Demon God's Brow Guard (Left)
+麦わら帽子=Straw Hat
+
+// Character / Face
+アンダーリム=Under Rim Glasses
+アンダーリム(細)=Under Rim Glasses (Narrow)
+ウェリントン=Wellington Glasses
+エンジェル=Angel
+オーバル=Oval Glasses
+ガラスの鼻=Glass Nose
+クローバー=Club
+シューティンググラス=Shooting Glasses
+スクエア=Square Glasses
+スター=Star
+スペード=Spade
+ソードスカル=Sword And Skull
+ダイア=Diamond
+トースト=Toast
+r:"ハート([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Heart $1"
+ハートインカム=Heart Headset
+ビッグスター=Big Star
+ピエロの鼻=Clown Nose
+フレームレス=Frame Lenses
+プリーツマスク=Sickness Mask
+ムーン=Moon
+ラウンド=Round Glasses
+リング=Ring
+リングジュエル=Jeweled Ring
+ワンポイント=Starpoint Earring
+丸瓶底眼鏡=Thick Circle Glasses
+土星=Saturn Earring
+水泳ゴーグル=Swimming Goggles
+眼帯右用=Left Eyepatch
+眼帯左用=Right Eyepatch
+第三の目=Third Eye
+
+// Character / Neck
+シデ=Shinto Paper Streamer
+ハートのペンダント=Heart Pendant
+ホイッスル=Whistle
+マフラー=Muffler
+リボンチョーカー=Ribbon Choker
+リボンペンダント=Ribbon Pendant
+ロングネクタイ=Long Necktie
+一粒ペンダント=Starpoint Pendant
+勾玉の首飾り =Magatama Amulet
+土星のペンダント=Saturn Pendant
+小悪魔チョーカー=Devil Choker
+星のペンダント=Star Pendant
+聴診器=Stethoscope
+蝶ネクタイ=Bow Tie
+鈴=Bell
+首掛けメガホン=Hanging Megaphone
+首枷=Metal Collar
+鬼神のリボン =Demon God's Ribbon
+
+// Character / Hair
+クロスヘアピン=Cross Hairpin
+ドクロの髪飾り=Skull Ornament
+ハイビスカス=Hibiscus
+ハートのバレッタ=Heart Barette
+ハートの髪飾り=Heart Ornament
+ヘアピン=Hairpin
+大きなリボン=Large Ribbon
+安全ピン=Safety Pin
+星のバレッタ=Star Barette
+星の髪飾り=Star Ornament
+牡丹の髪飾り=Tree Peony Ornament
+r:"細リボン([a-zA-Zａ-ｚＡ-Ｚ]+)$"=r:"Fine Ribbon $1"
+花=Flower
+花の髪飾り（揺れ）=Flower Ornament (Moves)
+蝶の髪飾り=Butterfly Ornament
+髪留め=Barette
+
+// Gimmicks
+obj有り=With Objects
+obj無し=Without Objects
+
+// Gimmicks / With Objects
+ピストン=Piston
+吊りパイプ固い=Stiff Hanging Pipe
+吊りパイプ固い(長=Stiff Hanging Pipe (Long)
+吊りパイプ柔らか=Flexible Hanging Pipe
+吊りパイプ柔らか(長=Flexible Hanging Pipe (Long)
+吊りボール固い=Stiff Hanging Ball
+吊りボール固い(長=Stiff Hanging Ball (Long)
+吊りボール柔らか=Flexible Hanging Ball
+吊りボール柔らか(長=Flexible Hanging Ball (Long)
+回転=Rotator
+r:"^投げ([０-９0-9]+)$"=r:"Pitch $1"
+r:"^関節([０-９0-9]+)$"=r:"$1° Joint"
+r:"^関節([０-９0-9]+)_Bタイプ$"=r:"$1° Joint Type B"
+
+// Gimmicks / Without Objects
+r:"^バウンド([０-９0-9]+).obj無し.$"=r:"Bound $1 (w/o Object)"
+ピストン（obj無し）=Piston (w/o Object)
+r:"^回転([０-９0-9]+)_Bタイプ.obj無し.$"=r:"$1° Rotator Type B (w/o Object)"
+r:"^回転([０-９0-9]+).obj無し.$"=r:"$1° Rotator (w/o Object)"
+回転（obj無し）=Rotator (w/o Object)
+r:"^投げ([０-９0-9]+).obj無し.$"=r:"Pitch $1 (w/o Object)"
+振動（obj無し）=Shaker (w/o Object)
+浮遊（obj無し）=Floater (w/o Object)
+
+// Glow / Mecha
+r:"^シンプルコア([０-９0-9]+)$"=r:"Simple Core $1"
+ペンライト=Penlight
+リング(細)=Thin Ring
+円柱=Disc
+円柱(溝あり)=Disc (Grooved)
+円柱(細)=Rod
+球体=Orb
+輪=Hoop
+電球=Light Bulb
+電球(細)=Light Bulb (Cylinder)
+
+// Glow / Illumination
+r:"^電気スタンド([０-９0-9]+)$"=r:"Floor Lamp $1"
+r:"^電気照明(和)([０-９0-9]+)$"=r:"Soft Electric Light $1"
+r:"^電気照明([０-９0-9]+)$"=r:"Electric Light $1"
+r:"^非常灯([０-９0-9]+)$"=r:"Emergency Light $1"
+
+// Base
+ドア=Doors
+地面=Ground
+壁=Walls
+建造物=Structures
+画像板=Image Board
+空=Skies
+設置物=Installed Objects
+階段=Stairs
+
+// Base / Doors
+ガラス入り障子=Glass-Paned Paper Door
+シャワー室ドア=Shower Door
+r:"^トイレドア([０-９0-9]+)$"=r:"Toilet Door $1"
+戸=Door
+r:"^襖([０-９0-9]+)$"=r:"Sliding Door $1"
+r:"^障子([０-９0-9]+)$"=r:"Paper Door $1"
+
+// Base / Ground
+r:"^アスファルト床([０-９0-9]+)$"=r:"Asphalt Floor $1"
+r:"^タイル床([０-９0-9]+)$"=r:"Tile Floor $1"
+r:"^レンガ床([０-９0-9]+)$"=r:"Brick Floor $1"
+体育館床=Gym Floor
+囲炉裏=Sunken Fireplace
+地面(土)=Dirt
+校内床=School Floor
+水面(川)=River Surface
+水面(海)=Ocean Surface
+浜辺=Beach
+浜辺(砂)=Beach (All Sand)
+r:"^畳([０-９0-9]+)$"=r:"Tatami Mat $1"
+r:"^石床([０-９0-9]+)$"=r:"Stone Floor $1"
+r:"^石畳([０-９0-9]+)$"=r:"Stone Paving $1"
+r:"^砂地([０-９0-9]+)$"=r:"Sand $1"
+r:"^花壇([０-９0-9]+)$"=r:"Flower Bed $1"
+草原(円)=Grassland (Yen)
+草原(四角)=Grassland (Square)
+野原=Field
+
+// Base / Walls
+r:"^ブロック壁([０-９0-9]+)$"=r:"Block Wall $1"
+体育館壁=Gym Wall
+木柱=Wood Pillar
+木製壁=Wood Wall
+r:"^石壁([０-９0-9]+)$"=r:"Stone Wall $1"
+石柱=Stone Pillar
+窓=Window
+黒板=Blackboard
+
+// Base / Structures
+r:"^ビル([０-９0-9]+)$"=r:"Building $1"
+公衆トイレ=Public Bathroom
+
+// Base / Image Board
+長方形=Rectangle
+
+// Base / Skies
+夕空=Twilight Sky
+夜空=Night Sky
+青空=Blue Sky
+
+// Base / Installed Objects
+ししおどし=Shishi-odoshi
+ガードレール=Guardrail
+r:"^ホワイトボード([０-９0-9]+)$"=r:"Whiteboard $1"
+公衆電話=Payphone
+切り株=Tree Stump
+r:"^壁ボックス([０-９0-9]+)$"=r:"Wall Box $1"
+r:"^岩([０-９0-9]+)$"=r:"Rock $1"
+木製コーナー=Wooden Cornerpost
+柵=Fence
+注意看板=Caution Sign
+渡り廊下=Passageway
+焚火(大)=Bonfire (Large)
+立て看板=Billboard
+竹柵=Bamboo Fence
+街灯=Street Light
+金網フェンス=Chain-Link Fence
+鉄骨=Steel Beams
+駐輪場屋根=Bicycle Parking
+
+// Base / Stairs
+r:"^石階段([０-９0-9]+)$"=r:"Stone Stairs $1"
+階段(木)=Wooden Stairs
+
+// Models / Character
+ひょうたん平面(キャラ)=Flattened Gourd (General)
+ひょうたん立体(キャラ)=Thick Gourd (General)
+カプセル(キャラ)=Capsule (Character)
+キューブ(キャラ）=Cube (Character)
+クリスタル(キャラ）=Diamond (Character)
+コーン(キャラ）=Cone (Character)
+シリンダー(キャラ）=Cylinder (Character)
+スフィア(キャラ)=Sphere (Character)
+ドロップ平面(キャラ)=Flattened Droplet (General)
+ドロップ立体(キャラ)=Thick Droplet (General)
+r:"ハート([０-９0-9]+).キャラ.$"=r:"Heart $1 (Character)"
+r:"パイプ([０-９0-9]+).キャラ.$"=r:"Pipe $1 (Character)"
+ヒレ型(キャラ)=Fin (Character)
+ピラミッド(キャラ）=Pyramid (Character)
+マウス型右(キャラ)=Right Mouse Button (General)
+マウス型左(キャラ)=Left Mouse Button (General)
+リング(キャラ）=Ring (Character)
+r:"三日月([０-９0-9]+).キャラ.$"=r:"Crescent Moon $1 (Character)"
+三角(キャラ）=Triangle (Character)
+三角横台形(キャラ)=Horizontal Triangle (General)
+二対多角形(キャラ)=Notched Hexagon (Character)
+五角形(キャラ）=Pentagon (Character)
+五角横台形(キャラ)=Horizontal Pentagon (General)
+先尖り棒(キャラ）=Pointed Rod (Character)
+八角形(キャラ）=Octagon (Character)
+六角形(キャラ）=Hexagon (Character)
+円形横台形(キャラ)=Horizontal Circle (General)
+十字(キャラ）=Cross (Character)
+半カプセル(キャラ)=Half Capsule (Character)
+半コーン(キャラ)=Half Cone (Character)
+半ピラミッド(キャラ)=Half Pyramid (Character)
+半円(キャラ）=Semicircle (Character)
+r:"台形([０-９0-9]+).キャラ.$"=r:"Trapezoid $1 (Character)"
+四分円(キャラ）=Quadrant (Character)
+r:"山型多角形([０-９0-9]+).キャラ.$"=r:"Mountain Polygon $1 (Character)"
+平面（キャラ）=Flat Plane (Character)
+r:"弧([０-９0-9]+).キャラ.$"=r:"Arc $1 (Character)"
+斜ひし形(キャラ)=Parallelogram (Character)
+r:"星([０-９0-9]+).キャラ.$"=r:"Star $1 (Character)"
+欠け四角(キャラ)=Square With Curve (Character)
+正台形(キャラ)=Perfect Trapezoid (Character)
+歪み三角柱(キャラ)=Bent Triangle (General)
+歪み台形(キャラ)=Squared Trapezoid (Character)
+歪み多角形(キャラ)=Bent Tube (Character)
+爪(キャラ）=Claw 1 (Character)
+r:"直角([０-９0-9]+).キャラ.$"=r:"Right Angle $1 (Character)"
+直角形(キャラ)=Right Angle Triangle (Character)
+r:"矢印([０-９0-9]+).キャラ.$"=r:"Arrow $1 (Character)"
+穴あきキューブ(キャラ）=Hollow Cube (Character)
+穴あき三角(キャラ）=Hollow Triangle (Character)
+穴あき六角形(キャラ）=Hollow Hexagon (Character)
+穴あき楕円(キャラ）=Hollow Elipse (Character)
+立体半円(キャラ)=Solid Hemisphere (Character)
+立体四半円(キャラ)=Solid Quadrasphere (Character)
+r:"筒([０-９0-9]*).キャラ. *$"=r:"Tube $1 (Character)"
+筒四分(キャラ)=Quarter Tube (Character)
+角なし三角(キャラ)=Beveled Triangle (Character)
+角なし半四角錐(キャラ)=Beveled Half-Squared Pyramid (Character)
+角なし四角(キャラ)=Beveled Square (Character)
+角なし四角錐(キャラ)=Beveled Pyramid (Character)
+角なし斜ひし形(キャラ)=Beveled Parallelogram (Character)
+角なし歪み台形(キャラ)=Beveled Squared Trapezoid (Character)
+角リング(キャラ)=Angled Ring (Character)
+角型(キャラ)=Angular Teardrop (Character)
+輪(キャラ)=Hoop (Character)
+長五角形（キャラ）=Long Pentagon (General)
+長六角形(キャラ)=Long Hexagon (General)
+階段型(キャラ)=Stairs (Character)
+頭(キャラ）=Head (Character)
+Ｖ字(キャラ）=V-Mark (Character)
+
+// Models / General
+ひょうたん平面(通常)=Flattened Gourd (General)
+ひょうたん立体(通常)=Thick Gourd (General)
+カプセル(通常)=Capsule (General)
+キューブ(通常）=Cube (General)
+クリスタル(通常）=Diamond (General)
+コーン(通常）=Cone (General)
+シリンダー(通常）=Cylinder (General)
+スフィア(通常）=Sphere (General)
+ドロップ平面(通常)=Flattened Droplet (General)
+ドロップ立体(通常)=Thick Droplet (General)
+r:"ハート([０-９0-9]+).通常.$"=r:"Heart $1 (General)"
+r:"パイプ([０-９0-9]+).通常.$"=r:"Pipe $1 (General)"
+ヒレ型(通常)=Fin (General)
+ピラミッド(通常）=Pyramid (General)
+マウス型右(通常)=Right Mouse Button (General)
+マウス型左(通常)=Left Mouse Button (General)
+リング(通常）=Ring (General)
+r:"三日月([０-９0-9]+).通常.$"=r:"Crescent Moon $1 (General)"
+三角(通常）=Triangle (General)
+三角横台形(通常)=Horizontal Triangle (General)
+二対多角形(通常)=Notched Hexagon (General)
+五角形(通常）=Pentagon (General)
+五角横台形(通常)=Horizontal Pentagon (General)
+先尖り棒(通常）=Pointed Rod (General)
+八角形(通常）=Octagon (General)
+六角形(通常）=Hexagon (General)
+円形横台形(通常)=Horizontal Circle (General)
+十字(通常）=Cross (General)
+半カプセル(通常)=Half Capsule (General)
+半コーン(通常)=Half Cone (General)
+半ピラミッド(通常)=Half Pyramid (General)
+半円(通常）=Semicircle (General)
+r:"台形([０-９0-9]+).通常.$"=r:"Trapezoid $1 (General)"
+四分円(通常）=Quadrant (General)
+r:"山型多角形([０-９0-9]+).通常.$"=r:"Mountain Polygon $1 (General)"
+平面（通常）=Flat Plane (General)
+r:"弧([０-９0-9]+).通常.$"=r:"Arc $1 (General)"
+斜ひし形(通常)=Parallelogram (General)
+r:"星([０-９0-9]+).通常.$"=r:"Star $1 (General)"
+欠け四角(通常)=Square With Curve (General)
+正台形(通常)=Perfect Trapezoid (General)
+歪み三角柱(通常)=Bent Triangle (General)
+歪み台形(通常)=Squared Trapezoid (General)
+歪み多角形(通常)=Bent Tube (General)
+爪(通常）=Claw 1 (General)
+r:"直角([０-９0-9]+).通常.$"=r:"Right Angle $1 (General)"
+直角形(通常)=Right Angle Triangle (General)
+r:"矢印([０-９0-9]+).通常.$"=r:"Arrow $1 (General)"
+穴あきキューブ(通常）=Hollow Cube (General)
+穴あき三角(通常)=Hollow Triangle (General)
+穴あき六角形(通常）=Hollow Hexagon (General)
+穴あき楕円(通常）=Hollow Elipse (General)
+立体半円(通常)=Solid Hemisphere (General)
+立体四半円(通常)=Solid Quadrasphere (General)
+r:"筒([０-９0-9]*).通常. *$"=r:"Tube $1 (General)"
+筒四分(通常)=Quarter Tube (General)
+角なし三角(通常)=Beveled Triangle (General)
+角なし半四角錐(通常)=Beveled Half-Squared Pyramid (General)
+角なし四角(通常)=Beveled Square (General)
+角なし四角錐(通常)=Beveled Pyramid (General)
+角なし斜ひし形(通常)=Beveled Parallelogram (General)
+角なし歪み台形(通常)=Beveled Squared Trapezoid (General)
+角リング(通常)=Angled Ring (General)
+角型(通常)=Angular Teardrop (General)
+輪(通常)=Hoop (General)
+長五角形（通常）=Long Pentagon (General)
+長六角形(通常)=Long Hexagon (General)
+階段型(通常)=Stairs (General)
+頭(通常）=Head (General)
+Ｖ字(通常）=V-Mark (General)
+
+// Furniture
+ベッド=Beds
+仕切り=Dividers
+机=Desks
+棚=Shelves
+椅子=Chairs
+水周り=Bathroom
+
+// Furniture / Summer
+ビーチチェア=Beach Chair
+ビーチパラソル=Beach Parasol
+木の机=Wooden Desk
+木の椅子=Wooden Chair
+木の箱=Wooden Box
+木の長椅子=Wooden Bench
+
+// Furniture / Beds
+保健室ベッド=School Bed
+布団=Futon
+自室ベッド=Personal Bed
+
+// Furniture / Dividers
+r:"^カーテン([０-９0-9]+)$"=r:"Curtain $1"
+r:"^カーテンレール([０-９0-9]+)$"=r:"Curtain Rails $1"
+r:"^シャワー室仕切り([０-９0-9]+)$"=r:"Shower Divider $1"
+r:"^トイレ仕切り([０-９0-9]+)$"=r:"Toilet Divider $1"
+パーテーション=Partition
+r:"^ブラインド([０-９0-9]+)$"=r:"Blinds $1"
+仕切りカーテン=Privacy Curtain
+
+// Furniture / Desks
+r:"^ちゃぶ台([０-９0-9]+)$"=r:"Chabudai $1"
+ガラステーブル(円)=Circular Glass Table
+ガラステーブル(四角)=Rectangular Glass Table
+コーナー机=Corner Desk
+三角テーブル=Triangular Table
+丸テーブル高=Tall Circular Table
+四角テーブル=Rectangular Table
+折り畳み用机=Folding Desk
+教卓=Teacher's Desk
+教壇=Teacher's Podium
+教室机=Classroom Desk
+r:"^机([０-９0-9]+)$"=r:"Desk $1"
+長テーブル低=Short Long Table
+長テーブル高=Tall Long Table
+食堂テーブル=Dining Table
+食堂長テーブル=Long Dining Table
+
+// Furniture / Shelves
+r:"^ロッカー([０-９0-9]+)$"=r:"Locker $1"
+r:"^事務棚([０-９0-9]+)$"=r:"Office Shelf $1"
+r:"^図書室棚([０-９0-9]+)$"=r:"Library Shelf $1"
+r:"^壁棚([０-９0-9]+)$"=r:"Wall Shelf $1"
+r:"^大棚([０-９0-9]+)$"=r:"Large Shelf $1"
+r:"^小棚([０-９0-9]+)$"=r:"Small Shelf $1"
+r:"^棚([０-９0-9]+)$"=r:"Shelf $1"
+r:"^自室棚([０-９0-9]+)$"=r:"Bedroom Shelf $1"
+
+// Furniture / Chairs
+r:"^ソファ([０-９0-9]+)$"=r:"Sofa $1"
+テラスチェアー=Terrace Chair
+r:"^パイプ椅子([０-９0-9]+)$"=r:"Pipe Chair $1"
+r:"^ベンチ([０-９0-9]+)$"=r:"Bench $1"
+丸椅子=Stool
+丸椅子(高)=Stool (High)
+r:"^和風長椅子([０-９0-9]+)$"=r:"Japanese Chair $1"
+座椅子=Legless Chair
+教室椅子=Classroom Chair
+木椅子=Wooden Chair
+r:"^椅子([０-９0-9]+)$"=r:"Chair $1"
+監視台=Judge's Chair
+r:"^豪華ソファ([０-９0-9]+)$"=r:"Expensive Sofa $1"
+r:"^長椅子([０-９0-9]+)$"=r:"Gym Bench $1"
+r:"^食堂椅子([０-９0-9]+)$"=r:"Dining Chair $1"
+
+// Furniture / Bathroom
+シャワーノズル=Shower Nozzle
+シャワーノブ=Shower Knob
+r:"^トイレットペーパー([０-９0-9]+)$"=r:"Toiletpaper $1"
+r:"^便器([０-９0-9]+)$"=r:"Toilet $1"
+水道=Washbasin
+r:"^洗面器([０-９0-9]+)$"=r:"Sink $1"
+流し台=Washstand
+r:"^蛇口([０-９0-9]+)$"=r:"Faucet $1"
+
+// Small Articles
+医療=Medical Care
+日用品=Daily Life
+雑貨=General Goods
+電化製品=Appliances
+
+// Small Articles / GBB_MOD
+オレンジバルーン=Orange Balloon
+盾の勇者の盾=Shield Hero Shield
+
+// Small Articles / Summer
+うちわ=Hand Fan
+ぶたの置物=Pig Ornament
+カブトムシ=Rhinoceros Beetle
+クワガタ=Stag Beetle
+ビーチボール=Beach Ball
+提灯=Paper Lantern
+水着=Swimsuit
+虫かご(大)=Insect Cage (Large)
+虫かご(小)=Insect Cage (Small)
+
+// Small Articles / Fantasy
+コイン=Coin
+バリスタ=Ballista
+バリスタの槍=Ballista Javelin
+大砲=Cannon
+大砲(台)=Cannon (Stand)
+大砲(玉)=Cannonball
+大砲(筒)=Cannon (Barrel)
+r:"^宝箱([０-９0-9]+)$"=r:"Treasure Chest $1"
+布袋=Cloth Bag
+爆弾=Bomb
+
+// Small Articles / Medical Care
+体重計=Weight Scale
+座高計=Seated Height Scale
+洗面器台=Washbowl Stand
+視力検査機=Eyesight Chart
+身長計=Height Scale
+
+// Small Articles / Daily Life
+すのこ=Slatted Wood
+ちりとり=Dustpan
+r:"^カレンダー([０-９0-9]+)$"=r:"Calendar $1"
+r:"^ゴミ箱([０-９0-9]+)$"=r:"Garbage Can $1"
+シャーペン=Mechanical Pencil
+r:"^ダンボール([０-９0-9]+)$"=r:"Cardboard $1"
+ツールボックス=Toolbox
+テッシュ=Box Of Tissues
+r:"^ノート([０-９0-9]+)$"=r:"Notebook $1"
+ハンガー=Hanger
+r:"^バケツ([０-９0-9]+)$"=r:"Bucket $1"
+手鏡=Hand Mirror
+r:"^本([０-９0-9]+)$"=r:"Book $1"
+本列=Row Of Books
+本立て=Bookend
+消しゴム=Eraser
+消火器=Fire Extinguisher
+箸=Chopsticks
+r:"^紙箱([０-９0-9]+)$"=r:"Paper Box $1"
+色ペン=Colored Pen
+r:"^見開き本([０-９0-9]+)$"=r:"Opened Book $1"
+r:"^踏み台([０-９0-9]+)$"=r:"Stool $1"
+鉛筆=Pencil
+雑巾=Dustcloth
+
+// Small Articles / General Goods
+うさぎの人形=Rabbit Doll
+カラーコーン=Safety Cone
+コルクボード=Corkboard
+コーンバー=Cone Bar
+ジト目うさぎ=Disgusted Rabbit
+タバコ=Cigarette
+デスクマット=Desk Mat
+バインダー=Binder
+r:"^プラモデル([０-９0-9]+)$"=r:"Plastic Model $1"
+マッサージオイル=Massage Oil
+乗馬鞭=Riding Crop
+地球儀=Globe
+r:"^壁掛け([０-９0-9]+)$"=r:"Wall Decoration $1"
+r:"^壺([０-９0-9]+)$"=r:"Vase $1"
+r:"^大型定規([０-９0-9]+)$"=r:"Large Ruler $1"
+将棋盤=Shogi Board
+将棋駒入れ=Shogi Piece Container
+r:"^座布団([０-９0-9]+)$"=r:"Zabuton $1"
+r:"^掛け軸([０-９0-9]+)$"=r:"Hanging Scroll $1"
+r:"^掲載物([０-９0-9]+)$"=r:"Notice $1"
+書類入れ=Document Holder
+木製トンボ=Wooden Dragonfly
+柄杓=Dipper
+漫研部チラシ=Manga Club Leaflet
+蝋燭=Candle
+釜=Kettle
+r:"^陶器([０-９0-9]+)$"=r:"Earthenware $1"
+額縁=Frame
+黒板消し=Blackboard Eraser
+
+// Small Articles / Appliances
+r:"^たこ足配線([０-９0-9]+)$"=r:"Power Strip $1"
+イヤホン=Earbuds
+エアコン=Air Conditioner
+ゲームコントローラー=Game Controller
+コンセント=Electrical Socket
+r:"^コンセントコード([０-９0-9]+)$"=r:"Electrical Cord $1"
+コンポ=Compact Stereo
+サーキュレーター=Air Circulator
+スマホ=Smartphone
+r:"^テレビ([０-９0-9]+)$"=r:"TV $1"
+ノートＰＣ=Laptop
+プリンター=Printer
+ポット=Pot
+マッサージ器=Vibrating Wand
+レトロな扇風機=Retro Electric Fan
+r:"^冷水器([０-９0-9]+)$"=r:"Water Fountain $1"
+冷蔵庫=Refrigerator
+教室スピーカー=Classroom Speaker
+r:"^時計([０-９0-9]+)$"=r:"Clock $1"
+照明スイッチ=Light Switch
+r:"^自販機([０-９0-9]+)$"=r:"Vending Machine $1"
+電子レンジ=Microwave Oven
+
+// Weapons
+コイカツ=Koikatsu
+
+// Weapons / Koikatsu
+2連鞘刀=Twin Sheathed Swords
+刀=Sword
+刀の鞘=Sword Scabbard
+小悪魔フォーク=Devil Pitchfork
+小悪魔フォーク(小)=Devil Pitchfork (Small)
+弓=Bow
+弓袋=Bow Bag
+白木拵えの納刀=Sheathed Wooden Sword
+白木拵えの鞘=Wooden Sword Sheath
+白木拵え刀=Wooden Sword
+矢=Arrow
+竹刀=Bamboo Sword
+鞘小太刀=Sheathed Short Sword
+鬼神の金棒=Demon God's Iron Club
+
+// Weapons / Fantasy
+ウォーハンマー=Warhammer
+エンシェントロッド=Ancient Rod
+クレイモア=Claymore
+ダガー=Dagger
+ハルバード=Halberd
+バックラー=Shield
+ルーンシールド=Rune Shield
+ルーンソード=Runesword
+ロングソード=Longsword
+ロングソードの鞘=Longsword Sheath
+ロングボウ=Longbow
+古式ライフル銃=Flintlock Rifle
+古式銃=Flintlock Pistol
+騎士のレイピア=Knight's Rapier
+騎士のレイピア(鞘)=Knight's Rapier (Sheath)
+魔法の書=Grimoire
+
+// Foodstuffs
+食べ物=Food
+飲み物=Drinks
+
+// Foodstuffs / Food
+お茶菓子=Tea Cakes
+ごはん=Bowl Of Rice
+アイスクリーム=Ice Cream
+カツサンド=Pork Sandwich
+r:"^サンドイッチ([０-９0-9]+)$"=r:"Sandwich $1"
+ソフトクリーム=Ice Cream Cone
+r:"^バナナ([０-９0-9]+)$"=r:"Banana $1"
+パウンドケーキ=Pound Cake
+r:"^メロンパン([０-９0-9]+)$"=r:"Melon Bread $1"
+r:"^定食([０-９0-9]+)$"=r:"Full Meal $1"
+r:"^弁当([０-９0-9]+)$"=r:"Bento $1"
+胡瓜=Cucumber
+魚肉ソーセージ=Fish Sausage
+
+// Foodstuffs / Drinks
+いちごみるく=Strawberry Milk
+ドリンク缶=Drink Can
+バナナジュース=Banana Juice
+パックのお茶=Tea Box
+ビール=Beer Mug
+ペットボトルのお茶=Plastic Tea Bottle
+ペットボトルの水=Plastic Water Bottle
+ラムネ瓶=Lemon Soda Bottle
+受け皿=Drink Saucer
+抹茶ラテ=Green Tea Latte
+牛乳コーヒー=Coffee With Milk Box
+紙コップ=Paper Cup
+茶碗=Teacup
+茶筅=Tea Whisk
+
+// H-Items
+おもちゃ=Sex Toys
+
+// H-Items / Sex Toys
+すけべいす=Open-Bottomed Stool
+アナルバイブ=Anal Vibrator
+アナルバイブ(長)=Anal Vibrator (Long)
+オナホ=Onahole
+ギャグボール=Ballgag
+コンドーム=Wrapped Condom
+ディルド=Dildo
+バイブ=Vibrating Dildo
+ローター=Rotor
+棘ボール=Prickle Ball
